@@ -17,3 +17,7 @@ docker-build:
 docker-run:
 	@echo "Running go-hello image"
 	@docker run go-hello
+
+test:
+	@echo "Running tests"
+	@go test -v ./...
