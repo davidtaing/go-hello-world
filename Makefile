@@ -2,7 +2,7 @@ build:
 	@echo "Building go-hello server"
 	@go build -o bin/go-hello
 
-run-local:
+run:
 	@echo "Running go-hello server"
 	@./bin/go-hello
 
