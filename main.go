@@ -11,6 +11,8 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/hello", handleHelloWorld)
 
+	log.Println("Hello server started on :8080")
+
 	err := http.ListenAndServe(":8080", r)
 	if err != nil {
 		log.Fatal(err)
